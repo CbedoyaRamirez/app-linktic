@@ -29,3 +29,7 @@ Este proyecto fue generado [Angular CLI](https://github.com/angular/angular-cli)
 
 Ejecuta `ng build` para construir la aplicación
 
+## URL en vercel
+
+https://app-linktic-465smgtwx-cbedoyaramirezs-projects.vercel.app
+
