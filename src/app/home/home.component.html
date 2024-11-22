@@ -1,0 +1,36 @@
+<header>
+    <div class="menu">
+        <ul>
+            <li [routerLink]="['/']"> <a>Salir</a> </li>
+        </ul>
+    </div> 
+</header>
+
+<div class="container">
+    <h2>Reservas</h2>
+    <button class="button" (click)="createReservetion()" >Crear reserva</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Cedula Cliente</th>
+                <th>Numero Personas</th>
+                <th>Fecha</th>
+                <th>Observaciones</th>
+                <th>Eliminar</th>
+                <th>Actualizar</th>
+            </tr>
+        </thead>
+        <tbody id="table-body" *ngFor="let item of listReservation; let i = index">
+            <td>{{item.idcliente}}</td>
+            <td>{{item.numPerson}}</td>
+            <td>{{item.datereservation}}</td>
+            <td>{{item.obervations}}</td>
+            <td>
+                <button class="button" (click)="deleteSelection(item)">Eliminar</button>
+            </td>
+            <td>
+                <button class="button" (click)="openModalUpdate(item)">Actualizar</button>
+            </td>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,15 @@
+<div  >
+    <form class="container">
+        <h1>Crear reserva</h1>
+        <label for="">Cedula</label>
+        <input type="number" value="{{numberId}}" (change)="catchrNumberID($event)" >
+        <label for="">Fecha</label>
+        <input type="date" value="{{dateReservation}}" (change)="catchDate($event)" >
+        <label for="">Observaciones</label>
+        <textarea value="{{observation}}" (change)="catchObservation($event)" > </textarea>
+        <label for="">Numero Personas</label>
+        <input type="number" value="{{numPerson}}" (change)="catchNumPerson($event)" >
+        <button class="button" (click)="create()" >Crear</button>
+    </form>    
+    <button class="button--salir" (click)="salir()" >Cerrar</button>
+</div>
